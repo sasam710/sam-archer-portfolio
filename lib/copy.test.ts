@@ -1,8 +1,9 @@
 import assert from "node:assert/strict";
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
+import { links } from "./links.ts";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const emDash = "\u2014";
@@ -31,5 +32,13 @@ test("public copy avoids em dashes, en dashes, SQL claims, and layoff language",
     assert.equal(text.includes(enDash), false, file);
     assert.equal(/\bSQL\b/.test(text), false, file);
     assert.equal(/layoff/i.test(text), false, file);
+    assert.equal(/\bCV\b/.test(text), false, file);
   }
+});
+
+test("resume and LinkedIn use the real destinations", () => {
+  assert.equal(links.resume, "/sam-archer-resume.pdf");
+  assert.equal(links.linkedin, "https://www.linkedin.com/in/sam-archer-550a4a63/");
+  assert.equal(existsSync(new URL("../public/sam-archer-resume.pdf", import.meta.url)), true);
+  assert.equal(existsSync(new URL("../public/resume.pdf", import.meta.url)), false);
 });

@@ -1,5 +1,14 @@
 export const changelog = [
   {
+    version: "0.1.2",
+    date: "2026-11-24",
+    notes: [
+      "Added the real resume at /sam-archer-resume.pdf and removed the placeholder.",
+      "The hero and footer now say Resume.",
+      "Linked the LinkedIn profile.",
+    ],
+  },
+  {
     version: "0.1.1",
     date: "2026-11-24",
     notes: [
@@ -13,7 +22,7 @@ export const changelog = [
       "First version of the portfolio.",
       "Added the home page, three Klaviyo case studies, the client-side inbox demo, and the support playbook.",
       "Added this changelog.",
-      "CV and LinkedIn buttons are placeholders.",
+      "Resume and LinkedIn buttons are placeholders.",
     ],
   },
 ] as const;
