@@ -34,6 +34,7 @@ test("public copy avoids em dashes, en dashes, SQL claims, and layoff language",
     assert.equal(/layoff/i.test(text), false, file);
     assert.equal(/\bCV\b/.test(text), false, file);
     assert.equal(/intercom/i.test(text), false, file);
+    assert.equal(text.includes("VERCEL_URL"), false, file);
   }
 });
 

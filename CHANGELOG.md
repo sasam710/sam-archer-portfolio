@@ -2,6 +2,12 @@
 
 Notable changes to this site are recorded here. The site renders the same notes at `/changelog`. GitHub issues are the roadmap: open an issue before treating an idea as promised work.
 
+## 0.1.4 - 2026-11-24
+
+- Added a sample integration debug demo below the inbox. It walks a request log and asks whether to resolve with the customer or escalate to engineering.
+- Updated the Fyxer and Klaviyo introductions.
+- Canonical links, the sitemap, and social cards default to https://sam-archer.vercel.app.
+
 ## 0.1.3 - 2026-11-24
 
 - Updated the tools list to Zendesk, Plain, Jira, Linear, Slack, Claude, Sidekick, Parahelp, and Loom.

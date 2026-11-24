@@ -1,8 +1,9 @@
-function origin(): string {
-  const configured = process.env.NEXT_PUBLIC_SITE_URL;
+export const PRODUCTION_SITE_URL = "https://sam-archer.vercel.app";
+
+export function resolveSiteUrl(value: string | undefined): string {
+  const configured = value?.trim();
   if (configured) return configured.replace(/\/$/, "");
-  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
-  return "http://localhost:3000";
+  return PRODUCTION_SITE_URL;
 }
 
-export const siteUrl = origin();
+export const siteUrl = resolveSiteUrl(process.env.NEXT_PUBLIC_SITE_URL);
