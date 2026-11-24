@@ -1,5 +1,12 @@
 export const changelog = [
   {
+    version: "0.1.3",
+    date: "2026-11-24",
+    notes: [
+      "Updated the tools list to Zendesk, Plain, Jira, Linear, Slack, Claude, Sidekick, Parahelp, and Loom.",
+    ],
+  },
+  {
     version: "0.1.2",
     date: "2026-11-24",
     notes: [
