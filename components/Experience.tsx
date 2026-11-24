@@ -6,7 +6,7 @@ export function Experience() {
       <div className="wrap">
         <h2 id="work-title">Work</h2>
         <p className="lede">
-          I am at Fyxer now. The Klaviyo notes are the results I will put a number on.
+          Currently at Fyxer. The results below are from my four years at Klaviyo, where I can show the numbers.
         </p>
         <ol className="roles">
           <li>

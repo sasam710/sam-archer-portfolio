@@ -37,8 +37,8 @@ export function CaseStudies() {
       <div className="wrap">
         <h2 id="cases-title">Case studies</h2>
         <p className="lede">
-          Three pieces of work from Klaviyo. The results are the ones I will stand behind. Where I
-          describe the approach, it is the shape of the work, in plain terms.
+          Three pieces of work from Klaviyo, with the results they delivered. Where I describe the
+          approach, it is the shape of the work, in plain terms.
         </p>
         <div className="case-list">
           {CASES.map((item) => (

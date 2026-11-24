@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test lib/inbox-model.test.ts lib/changelog.test.ts lib/copy.test.ts"
+    "test": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test lib/inbox-model.test.ts lib/debug-model.test.ts lib/changelog.test.ts lib/copy.test.ts lib/site.test.ts"
   },
   "dependencies": {
     "next": "16.4.6",

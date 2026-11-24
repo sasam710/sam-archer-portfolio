@@ -33,10 +33,10 @@ npm start
 
 1. Import this GitHub repo in Vercel.
 2. Leave the framework preset on Next.js. Build command: `npm run build`. No install override.
-3. Do not add environment variables unless you want a canonical URL (see below).
-4. Deploy. Vercel assigns a free `vercel.app` URL.
+3. Do not add environment variables for a normal deploy.
+4. Deploy. The public site is [https://sam-archer.vercel.app](https://sam-archer.vercel.app).
 
-Optional: set `NEXT_PUBLIC_SITE_URL` to the production origin, including `https://`, once you know the `vercel.app` host or a custom domain. The site uses it for canonical links, the sitemap, and social cards. If it is unset, Vercel uses `VERCEL_URL` at build time, and local dev uses `http://localhost:3000`.
+Canonical links, the sitemap, and social cards use `https://sam-archer.vercel.app` unless `NEXT_PUBLIC_SITE_URL` is set to a full origin, including `https://`. Set that only if the public site moves.
 
 ## Resume and LinkedIn
 
