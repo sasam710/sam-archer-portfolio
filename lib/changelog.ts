@@ -1,5 +1,10 @@
 export const changelog = [
   {
+    version: "0.2.1",
+    date: "2026-11-24",
+    notes: ["Added work authorization to the contact section, hero, and footer."],
+  },
+  {
     version: "0.2.0",
     date: "2026-11-24",
     notes: [
