@@ -38,20 +38,13 @@ npm start
 
 Optional: set `NEXT_PUBLIC_SITE_URL` to the production origin, including `https://`, once you know the `vercel.app` host or a custom domain. The site uses it for canonical links, the sitemap, and social cards. If it is unset, Vercel uses `VERCEL_URL` at build time, and local dev uses `http://localhost:3000`.
 
-## Before you share the link
+## Resume and LinkedIn
 
-Two placeholders are still in the repo. Replace them before an interview.
-
-1. **CV.** The button points at `/resume.pdf`, which is `public/resume.pdf`. That file is a one-page placeholder with the public facts from this site. Replace it with the real CV and keep the same filename, or change `cv` in `lib/links.ts` if the path should move.
-2. **LinkedIn.** The button is `href="#"`. Set `linkedin` in `lib/links.ts` to the real profile URL. The hero and the footer both read that one constant.
+The resume button points at `/sam-archer-resume.pdf`, which is `public/sam-archer-resume.pdf`. LinkedIn is `https://www.linkedin.com/in/sam-archer-550a4a63/`. Both URLs live in `lib/links.ts`, and the hero and the footer read that file.
 
 ## Roadmap
 
-GitHub issues are the roadmap. Open an issue before treating a change as promised work. Sensible first issues:
-
-- Replace the placeholder CV.
-- Add the real LinkedIn URL.
-- Adjust a triage weight in `lib/inbox-model.ts` if a rule should score differently.
+GitHub issues are the roadmap. Open an issue before treating a change as promised work. A sensible issue: adjust a triage weight in `lib/inbox-model.ts` if a rule should score differently.
 
 The changelog records what already shipped. Edit `lib/changelog.ts` and `CHANGELOG.md` together. A test fails if they drift. The same notes render at `/changelog`.
 
@@ -65,6 +58,6 @@ Postroom is a fictional AI email assistant. The ten tickets are sample data for 
 - `app/changelog/page.tsx` changelog
 - `components/` page sections and the inbox demo
 - `lib/inbox-model.ts` sample tickets, point values, and triage
-- `lib/links.ts` CV, LinkedIn, and GitHub URLs
-- `public/resume.pdf` placeholder CV
+- `lib/links.ts` resume, LinkedIn, and GitHub URLs
+- `public/sam-archer-resume.pdf` resume
 - `CHANGELOG.md` the same notes as the changelog page

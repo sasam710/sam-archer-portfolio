@@ -13,10 +13,13 @@ export function SiteFooter() {
         </div>
         <ul className="footer-links">
           <li>
-            <a href={links.cv}>CV</a>
+            <a href={links.resume}>Resume</a>
           </li>
           <li>
-            <a href={links.linkedin}>LinkedIn</a>
+            <a href={links.linkedin} target="_blank" rel="noreferrer">
+              LinkedIn
+              <span className="visually-hidden"> (opens in a new tab)</span>
+            </a>
           </li>
           <li>
             <a href={links.github} target="_blank" rel="noreferrer">

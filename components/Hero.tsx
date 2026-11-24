@@ -13,11 +13,12 @@ export function Hero() {
             plugin so quiet threads stayed visible.
           </p>
           <div className="actions">
-            <a className="button button-primary" href={links.cv}>
-              View CV
+            <a className="button button-primary" href={links.resume}>
+              View Resume
             </a>
-            <a className="button button-ghost" href={links.linkedin}>
+            <a className="button button-ghost" href={links.linkedin} target="_blank" rel="noreferrer">
               LinkedIn
+              <span className="visually-hidden"> (opens in a new tab)</span>
             </a>
           </div>
         </div>

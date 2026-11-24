@@ -8,7 +8,7 @@ export function OpenWork() {
         <h2 id="open-title">Built in the open</h2>
         <p className="lede">
           This site lives in a public repo. The changelog is the record of what shipped. Issues are
-          the roadmap. If a CV link, a triage rule, or a paragraph should change, it should be an
+          the roadmap. If a resume link, a triage rule, or a paragraph should change, it should be an
           issue someone can point at.
         </p>
         <ul className="open-links">
