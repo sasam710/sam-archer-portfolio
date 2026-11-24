@@ -9,7 +9,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 1192 >>
+<< /Length 1299 >>
 stream
 BT
 /F1 18 Tf
@@ -59,15 +59,18 @@ BT
 (Helped bring the queue from hour-long waits to around) Tj
 /F1 12 Tf
 1 0 0 1 56 388 Tm
-(10 tickets a day, with CSAT above 90%.) Tj
+(10 tickets a day. CSAT stayed above 90%, about 97%) Tj
 /F1 12 Tf
 1 0 0 1 56 370 Tm
+(excluding cases closed after the customer stopped responding.) Tj
+/F1 12 Tf
+1 0 0 1 56 352 Tm
 (Built a last-reply timer plugin for the support team.) Tj
 /F1 13 Tf
-1 0 0 1 56 336 Tm
+1 0 0 1 56 318 Tm
 (Tools) Tj
 /F1 12 Tf
-1 0 0 1 56 316 Tm
+1 0 0 1 56 298 Tm
 (Zendesk, Intercom, Plain, Jira, Slack) Tj
 ET
 endstream
@@ -82,9 +85,9 @@ xref
 0000000058 00000 n 
 0000000115 00000 n 
 0000000241 00000 n 
-0000001485 00000 n 
+0000001592 00000 n 
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-1555
+1662
 %%EOF

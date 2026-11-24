@@ -23,8 +23,9 @@ export function Experience() {
               <li>Led a support pod.</li>
               <li>Coached new specialists in the Dublin pod.</li>
               <li>
-                Helped bring the queue down from hour-long waits to around 10 tickets a day, with
-                CSAT above 90%.
+                Helped bring the queue down from hour-long waits to around 10 tickets a day. CSAT
+                stayed above 90%, about 97% excluding cases closed after the customer stopped
+                responding.
               </li>
               <li>Built a last-reply timer plugin for the support team.</li>
             </ul>

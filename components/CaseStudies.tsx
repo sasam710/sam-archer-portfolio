@@ -7,7 +7,7 @@ const CASES = [
       "Customers were sitting in hour-long waits. At that length, people write back to ask if anyone is there, and the pod spends the next reply explaining the delay.",
     did: "I led the pod and treated the queue as the thing to fix. Aging had to be visible. Tickets that were really one issue had to sit together. A first reply had to move the problem forward. I kept CSAT in view while the wait came down, so speed did not come from rushing people off a thread.",
     result:
-      "The queue came down from hour-long waits to around 10 tickets a day. CSAT stayed above 90%.",
+      "The queue came down from hour-long waits to around 10 tickets a day. CSAT stayed above 90%, about 97% excluding cases closed after the customer stopped responding.",
   },
   {
     index: "02",

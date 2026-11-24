@@ -1,5 +1,12 @@
 export const changelog = [
   {
+    version: "0.1.1",
+    date: "2026-11-24",
+    notes: [
+      "Updated the Klaviyo CSAT line. CSAT stayed above 90%, about 97% excluding cases closed after the customer stopped responding.",
+    ],
+  },
+  {
     version: "0.1.0",
     date: "2026-11-24",
     notes: [
