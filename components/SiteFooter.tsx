@@ -10,6 +10,7 @@ export function SiteFooter() {
           <p>
             Product support specialist at Fyxer. Austin, TX. Central time. Originally from London.
           </p>
+          <p>US green card holder. No sponsorship needed.</p>
         </div>
         <ul className="footer-links">
           <li>

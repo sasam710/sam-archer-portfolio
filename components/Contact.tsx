@@ -6,6 +6,7 @@ export function Contact() {
       <div className="wrap">
         <h2 id="contact-title">Contact</h2>
         <p className="lede">Open to remote or Austin product support roles. Central time.</p>
+        <p>US green card holder. No sponsorship needed.</p>
         <div className="actions">
           <a className="button button-primary" href={links.email}>
             Email

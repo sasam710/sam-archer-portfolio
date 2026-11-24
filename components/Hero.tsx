@@ -31,6 +31,7 @@ export function Hero() {
           <p className="now-company">Fyxer</p>
           <p>AI email assistant</p>
           <p className="muted">October 2026 to present</p>
+          <p>US green card holder. No sponsorship needed.</p>
           <dl className="facts">
             <dt>Based</dt>
             <dd>Austin, TX</dd>
