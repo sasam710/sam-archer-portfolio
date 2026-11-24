@@ -1,4 +1,4 @@
-const TOOLS = ["Zendesk", "Intercom", "Plain", "Jira", "Slack"] as const;
+const TOOLS = ["Plain", "Zendesk", "Jira", "Slack"] as const;
 
 export function Experience() {
   return (

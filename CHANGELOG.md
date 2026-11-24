@@ -7,6 +7,7 @@ Notable changes to this site are recorded here. The site renders the same notes 
 - Added the real resume at /sam-archer-resume.pdf and removed the placeholder.
 - The hero and footer now say Resume.
 - Linked the LinkedIn profile.
+- Helpdesk tools are Plain and Zendesk.
 
 ## 0.1.1 - 2026-11-24
 
