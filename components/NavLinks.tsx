@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 const NAV = [
   { href: "/#work", label: "Work" },
@@ -10,7 +9,6 @@ const NAV = [
   { href: "/#debug", label: "Debug demo" },
   { href: "/#playbook", label: "Playbook" },
   { href: "/#open", label: "In the open" },
-  { href: "/changelog", label: "Changelog" },
 ] as const;
 
 function closeMobileMenu() {
@@ -19,24 +17,15 @@ function closeMobileMenu() {
 }
 
 export function NavLinks({ className }: { className?: string }) {
-  const pathname = usePathname();
-
   return (
     <ul className={className}>
-      {NAV.map((item) => {
-        const current = item.href === "/changelog" && pathname === "/changelog";
-        return (
-          <li key={item.href}>
-            <Link
-              href={item.href}
-              aria-current={current ? "page" : undefined}
-              onClick={closeMobileMenu}
-            >
-              {item.label}
-            </Link>
-          </li>
-        );
-      })}
+      {NAV.map((item) => (
+        <li key={item.href}>
+          <Link href={item.href} onClick={closeMobileMenu}>
+            {item.label}
+          </Link>
+        </li>
+      ))}
     </ul>
   );
 }

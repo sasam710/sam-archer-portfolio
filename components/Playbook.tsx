@@ -28,7 +28,7 @@ const STEPS = [
   },
   {
     title: "Escalate",
-    body: "Engineering gets one note, not a paste of every ticket. Symptom, start time, scope, what was already tried, who is blocked, and the ticket ids. A board meeting and a support desk waiting on their own customers both belong in that note. I stay on the customer thread and translate in both directions.",
+    body: "Engineering gets one note, not a paste of every ticket. Symptom, start time, scope, what was already tried, who is blocked, and the ticket IDs. A board meeting and a support desk waiting on their own customers both belong in that note. I stay on the customer thread and translate in both directions.",
   },
   {
     title: "Follow up",

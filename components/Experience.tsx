@@ -13,12 +13,19 @@ export function Experience() {
             <p className="when">October 2026 to present</p>
             <h3>Product Support Specialist</h3>
             <p className="where">Fyxer, AI email assistant</p>
-            <p>I am on the product support team. I am based in Austin and I work Central time.</p>
+            <ul className="role-points">
+              <li>Own cases end to end in Plain.</li>
+              <li>
+                Look up and track bugs in GitHub and Linear with Engineering, and stay with cases
+                until the fix lands.
+              </li>
+              <li>Based in Austin, working Central time.</li>
+            </ul>
           </li>
           <li>
-            <p className="when">July 2022 to October 2026</p>
-            <h3>Senior Product Expert and support pod lead</h3>
-            <p className="where">Klaviyo</p>
+            <p className="when">February 2024 to October 2026</p>
+            <h3>Senior Product Expert</h3>
+            <p className="where">Klaviyo, support pod lead</p>
             <ul className="role-points">
               <li>Led a support pod.</li>
               <li>Coached new specialists in the Dublin pod.</li>
@@ -27,7 +34,35 @@ export function Experience() {
                 stayed above 90%, about 97% excluding cases closed after the customer stopped
                 responding.
               </li>
-              <li>Built a last-reply timer plugin for the support team.</li>
+              <li>Built a last-reply timer Chrome extension for the support team.</li>
+              <li>Supported the live rollout of Klaviyo&apos;s Customer Data Platform.</li>
+            </ul>
+          </li>
+          <li>
+            <p className="when">July 2022 to February 2024</p>
+            <h3>Product Expert</h3>
+            <p className="where">Klaviyo</p>
+            <ul className="role-points">
+              <li>Selected for the Development Pod within 8 months, for the hardest technical cases.</li>
+              <li>
+                Reproduced API issues in Postman and compared the request and response with the
+                calls the app was making, to find whether the fault was customer setup (auth,
+                payload, rate limits) or the platform side.
+              </li>
+              <li>
+                Worked integration error codes across Shopify, WooCommerce, Magento, and Facebook.
+              </li>
+              <li>Diagnosed onsite HTML, CSS, and JavaScript issues affecting customers.</li>
+            </ul>
+          </li>
+          <li>
+            <p className="when">April 2018 to July 2022</p>
+            <h3>Management Accountant and Systems Lead</h3>
+            <p className="where">Pho Trading Ltd, London</p>
+            <ul className="role-points">
+              <li>Led payroll, EPOS, and procurement system rollouts across 45 sites.</li>
+              <li>Owned SOPs and manager training.</li>
+              <li>Managed two people.</li>
             </ul>
           </li>
         </ol>

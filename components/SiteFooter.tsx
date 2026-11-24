@@ -13,6 +13,9 @@ export function SiteFooter() {
         </div>
         <ul className="footer-links">
           <li>
+            <a href={links.email}>Email</a>
+          </li>
+          <li>
             <a href={links.resume}>Resume</a>
           </li>
           <li>
