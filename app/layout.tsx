@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   description,
   authors: [{ name: "Sam Archer" }],
   openGraph: {
+    url: siteUrl,
     title: "Sam Archer, product support",
     description:
       "Support specialist who turns queues into systems. Product support at Fyxer. Previously at Klaviyo.",

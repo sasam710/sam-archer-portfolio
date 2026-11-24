@@ -10,7 +10,7 @@ export function Hero() {
           <p className="lede">
             I am Sam Archer, a product support specialist at Fyxer, an AI email assistant. I came
             from Klaviyo, where I led a support pod, coached new specialists, and built a small
-            plugin so quiet threads stayed visible.
+            Chrome extension so quiet threads stayed visible.
           </p>
           <div className="actions">
             <a className="button button-primary" href={links.resume}>
@@ -19,6 +19,9 @@ export function Hero() {
             <a className="button button-ghost" href={links.linkedin} target="_blank" rel="noreferrer">
               LinkedIn
               <span className="visually-hidden"> (opens in a new tab)</span>
+            </a>
+            <a className="button button-ghost" href={links.email}>
+              Email
             </a>
           </div>
         </div>

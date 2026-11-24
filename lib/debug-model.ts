@@ -160,14 +160,14 @@ export const DEBUG_SCENARIOS: readonly DebugScenario[] = [
       "A platform fault usually shows up on more than one workspace, and it does not say the signing key was rejected. The subscription read is still 200.",
     decision: "resolve",
     decisionWhy:
-      "Engineering cannot update a secret on the customer receiver. The reply should name the 401s, the request ids, and the replay once they save the current key.",
+      "Engineering cannot update a secret on the customer receiver. The reply should name the 401s, the request IDs, and the replay once they save the current key.",
     decisionWrong:
       "Escalating this sends engineering a customer configuration change. They will bounce it back, and the events stay stuck.",
     reply: `Hello Mina,
 
 The subscription is still active. Deliveries were succeeding, then at 08:12 CT POST /v1/webhooks/deliver started returning 401. The message is that the signing key was rejected. That matches the key rotation last night.
 
-Save the current signing secret on receiver.kindling.example. Reply here when that is done and I will replay from 08:12. Request ids on your side: req_8c21, req_8c44, req_8d02.
+Save the current signing secret on receiver.kindling.example. Reply here when that is done and I will replay from 08:12. Request IDs on your side: req_8c21, req_8c44, req_8d02.
 
 This is the receiver configuration, so I am not sending it to engineering.
 
@@ -290,7 +290,7 @@ Product support`,
 
 The sync is not down. POST /v1/events started returning 429 at 09:11 CT, with Retry-After 30s, once the import rate jumped. Smaller batches on the same key are still 200.
 
-Slow the batch size, or wait out the window in Retry-After, and the queue will catch up. Request ids: req_9a10, req_9a18, req_9a22.
+Slow the batch size, or wait out the window in Retry-After, and the queue will catch up. Request IDs: req_9a10, req_9a18, req_9a22.
 
 I am not escalating this. The limit is behaving as written for this key.
 
@@ -406,14 +406,14 @@ Product support`,
       "A customer configuration problem stays on one receiver. It does not start for two workspaces at the release, and it does not return 500 with an upstream timeout.",
     decision: "escalate",
     decisionWhy:
-      "The customer cannot fix an upstream timeout that started at a release. Engineering needs one package: request ids, the window, the last good call, and who is waiting.",
+      "The customer cannot fix an upstream timeout that started at a release. Engineering needs one package: request IDs, the window, the last good call, and who is waiting.",
     decisionWrong:
       "Asking both customers to rotate keys will not clear a 500 that started at the release. That delays the people who can fix it.",
     reply: `Hello Ruth,
 
 I am not going to ask you to rotate keys. Deliveries were 200 at 09:30 CT (req_b090). From 09:41, POST /v1/webhooks/deliver returns 500 for Kindling Studio and for Fieldnote, and the message names release 2026.11.24.1.
 
-I am escalating one note to engineering with those request ids. I will update this thread when there is a cause or a workaround that is worth your time.
+I am escalating one note to engineering with those request IDs. I will update this thread when there is a cause or a workaround that is worth your time.
 
 Sam Archer
 Product support`,
@@ -427,7 +427,7 @@ Product support`,
         value: "09:41 to 09:46 CT on 24 Nov 2026, immediately after release 2026.11.24.1.",
       },
       {
-        label: "Request ids",
+        label: "Request IDs",
         value: "req_b110, req_b118, req_b130, req_b141.",
       },
       {
@@ -444,7 +444,7 @@ Product support`,
       },
       {
         label: "Steps",
-        value: "Open the request ids above. Compare them with req_b090 from before the release. No key change in these rows.",
+        value: "Open the request IDs above. Compare them with req_b090 from before the release. No key change in these rows.",
       },
       {
         label: "Where it goes",

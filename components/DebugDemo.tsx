@@ -21,16 +21,16 @@ const STEPS: readonly { id: Step; label: string }[] = [
 
 function LogTable({ scenario, showPattern }: { scenario: DebugScenario; showPattern: boolean }) {
   return (
-    <div className="log-scroll">
+    <div className="log-scroll" tabIndex={0} aria-label="Sample request log">
       <table className="log-table">
         <caption>Sample request log. {patternRows(scenario).length} rows are the pattern.</caption>
         <thead>
           <tr>
             <th scope="col">Time</th>
+            <th scope="col">Status</th>
             <th scope="col">Method</th>
             <th scope="col">Endpoint</th>
-            <th scope="col">Status</th>
-            <th scope="col">Request id</th>
+            <th scope="col">Request ID</th>
             <th scope="col">Latency</th>
             <th scope="col">Message</th>
           </tr>
@@ -44,14 +44,14 @@ function LogTable({ scenario, showPattern }: { scenario: DebugScenario; showPatt
                   {marked ? <span className="pattern-tag">Pattern</span> : null}
                   {row.time}
                 </td>
-                <td>{row.method}</td>
-                <td>
-                  <code>{row.endpoint}</code>
-                </td>
                 <td>
                   <span className="status-pill" data-status={row.status}>
                     {row.status}
                   </span>
+                </td>
+                <td>{row.method}</td>
+                <td>
+                  <code>{row.endpoint}</code>
                 </td>
                 <td>{row.requestId}</td>
                 <td>{row.latencyMs} ms</td>

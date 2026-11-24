@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CaseStudies } from "@/components/CaseStudies";
+import { Contact } from "@/components/Contact";
 import { DebugSection } from "@/components/DebugSection";
 import { Experience } from "@/components/Experience";
 import { Hero } from "@/components/Hero";
@@ -21,6 +22,7 @@ export default function HomePage() {
       <DebugSection />
       <Playbook />
       <OpenWork />
+      <Contact />
     </main>
   );
 }

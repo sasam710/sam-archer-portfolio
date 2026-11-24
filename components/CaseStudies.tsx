@@ -15,7 +15,7 @@ const CASES = [
     title: "A clock for threads that go quiet",
     problem:
       "In a fast queue the newest ticket is the loud one. A thread that has gone quiet is easy to lose, and the customer experiences that as being ignored.",
-    did: "I built a last-reply timer plugin for the support team. It showed how long it had been since the last reply, so a quiet thread stayed visible next to the new mail. People could still use their judgment. The wait was no longer something they had to hold in their head.",
+    did: "I built a last-reply timer Chrome extension for the support team. It showed how long it had been since the last reply, so a quiet thread stayed visible next to the new mail. People could still use their judgment. The wait was no longer something they had to hold in their head.",
     result:
       "The support team could see time since the last reply, so a quiet thread stayed on the board while new mail came in.",
   },
