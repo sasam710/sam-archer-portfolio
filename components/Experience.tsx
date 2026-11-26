@@ -11,7 +11,7 @@ export function Experience() {
         <ol className="roles">
           <li>
             <p className="when">October 2026 to present</p>
-            <h3>Lead Product Support Specialist</h3>
+            <h3>Product Support Specialist</h3>
             <p className="where">Fyxer, AI email assistant</p>
             <ul className="role-points">
               <li>Own cases end to end in Plain.</li>
